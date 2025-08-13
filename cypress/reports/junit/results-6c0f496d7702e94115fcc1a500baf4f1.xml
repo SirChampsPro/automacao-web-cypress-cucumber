@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.193" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-08-13T03:44:09" tests="0" file="cypress\e2e\step_definitions\checkout.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Checkout" timestamp="2025-08-13T03:44:09" tests="1" time="7.192" failures="1">
+    <testcase name="Checkout Validar fluxo de compras" time="0.000" classname="Validar fluxo de compras">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[data-test=&quot;title&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-test="title"]`, but never found it.
+    at Products.verificadorPagina (cypress/e2e/pages/Products.js:12:38)
+    at Context.eval (cypress/e2e/step_definitions/checkout/checkout.js:9:13)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)
+    at getRet (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:121066:20)
+    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4285:29)
+    at Context.thenFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:121077:66)
+    at Context.then (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:121328:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
