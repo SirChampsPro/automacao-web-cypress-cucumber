@@ -9,10 +9,10 @@ Given('Estou na tela de Login', () => {
 When('Inserir email e senha e clicar em Login', () => {
     LoginPage.login('standard_user', 'secret_sauce')
     cy.screenshot();
+    LoginPage.clicarLogin();
 });
 
 Then('Sistema redireciona para a tela inicial', () => {
-    LoginPage.clicarLogin();
     cy.get('[data-test="title"]').should('contain', 'Products');
     cy.screenshot();
 });

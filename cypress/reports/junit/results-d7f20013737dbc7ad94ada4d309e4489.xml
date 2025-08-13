@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="34.438" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-08-13T06:25:32" tests="0" file="cypress\e2e\step_definitions\checkout.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Checkout" timestamp="2025-08-13T06:25:32" tests="1" time="34.437" failures="1">
+    <testcase name="Checkout Validar fluxo de compras" time="0.000" classname="Validar fluxo de compras">
+      <failure message="`cy.screenshot()` timed out waiting `30000ms` to complete.
+
+https://on.cypress.io/screenshot" type="CypressError"><![CDATA[CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.
+
+https://on.cypress.io/screenshot
+    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:137793:73)
+    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)
+    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4156:41)
+    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)
+    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1591:10)
+    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1667:18)
+    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2377:12)
+    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2370:9)
+    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2386:5)
+    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2256:14)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

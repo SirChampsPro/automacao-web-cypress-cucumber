@@ -31,6 +31,8 @@ And('Removo dois produtos do carrinho um na tela de produtos e outro na tela do 
     cy.get('[data-test="shopping-cart-link"]').click();
     Products.verificadorPagina('Your Cart');
 
+    cy.screenshot();
+
     Products.removerProdutosCarrinho('[data-test="remove-sauce-labs-bolt-t-shirt"]');
     Products.verificaQtdItensCarrinho('2');
 
@@ -48,12 +50,13 @@ And('Avanco ate a tela de pagamento', () => {
 And('Preencho o formulário de checkout', () => {
     Checkout.preencherFormulario('ChampsQA', 'Tester', '22233345');
     cy.screenshot();
+    Checkout.clicarConfirmacao();
 });
 
 When('Finalizo a compra', () => {
     Products.verificadorPagina('Checkout: Overview');
-    cy.get('[data-test="finish"]').click();
     cy.screenshot();
+    cy.get('[data-test="finish"]').click();
 });
 
 Then('Sistema deve exibir uma mensagem de sucesso', () => {
